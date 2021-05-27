@@ -4,14 +4,14 @@ class OnlineService
   end
 
   def make_online!
-    @current_user.update!(online: true)
+    @current_user.update(online: true)
 
     broadcast_appearance
   end
 
   def make_offline!
     if count_unique_connections.zero?
-      @current_user.update!(online: false)
+      @current_user.update(online: false)
 
       broadcast_appearance
     end

@@ -10,6 +10,6 @@ App.appearance = App.cable.subscriptions.create "AppearanceChannel",
     element_user = $("#online").find("[data-id=#{current_user.id}]")
 
     if current_user.online && element_user.length == 0
-      $("#online").append("<li data-id=#{current_user.id}>#{current_user.nickname}</li>")
+      $("#online").append("#{current_user.nickname}")
     else if !current_user.online && element_user.length > 0
       element_user.remove()
