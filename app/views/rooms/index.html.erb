@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<hr>
+<div class='row'>
+  <div class="col-12">
+    <h4>Users online:</h4>
+    <%= render partial: "users/user", collection: @online_users %>
+  </div>
+</div>
+<hr>
+
+<div class='row'>
+  <div class='col-8'>
+    <h1>Rooms</h1>
+
+    <ul class="mt-4 list-unstyled">
+      <%= render @rooms %>
+    </ul>
+
+    <div class="mt-2">
+      <%= render 'rooms/form', room: @room %>
+    </div>
+  </div>
+</div>
