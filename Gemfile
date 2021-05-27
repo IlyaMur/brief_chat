@@ -33,6 +33,7 @@ gem 'redis', '~> 3.0'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
+gem 'active_model_serializers'
 
 group :production do
   gem 'pg'
