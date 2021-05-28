@@ -1,24 +1,26 @@
-# README
+# BriefChat
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Небольшой чат без регистрации.  
+Пользователям доступны комнаты для общения и просмотр текущего онлайна.
+Благодаря Action Cable реализовано обновление информации в реальном времени через WebSockets.
 
-Things you may want to cover:
+### Демонстрация работы
+https://littlebriefchat.herokuapp.com/
 
-* Ruby version
+### Как установить 
+Приложение написано с использованием `Rails 5.1.4` и `Redis 3.0`.
+```
+$ git clone https://github.com/IlyaMur/brief_chat
+$ cd ./brief_chat
+$ bundle install --without production
+$ rails db:migrate
+```
 
-* System dependencies
+### Как запустить
+Запуск осуществляется командой
+```
+$ bundle exec rails s
+```
+ Приложение доступно по адресу `http://localhost:3000/`
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+##### Free License
